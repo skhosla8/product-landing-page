@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/tno6aph.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jik4qef.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="https://i.ibb.co/P6pdfmG/Fizz-Shop-logo.png" alt="Fizz-Shop-logo">
+        </div>
+
+        <!-- dropdown menu for smaller screens -->
+        <div class="header-dropdown">
+            <button class="header-dropdown-btn">Menu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="header-dropdown-content">
+                <a href="#features">Features</a>
+                <a href="#our-story">How It's Made</a>
+                <a href="#new">New</a>
+            </div>
+        </div>
+
+        <!-- traditional menu for larger screens -->
+        <nav class="header-nav">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href=#our-story>How It's Made</a></li>
+                <li><a class="nav-link" href="#new">New</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="subscribe">
+        <div id="subscribe-background">
+            <div id="form-background">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    <input type="submit" id="submit" value="JOIN OUR FAMILY">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features-container">
+            <div class="features-icon" id="heart">
+                <i class="fas fa-heart fa-3x"></i>
+            </div>
+            <span class="features-description">
+                <h2>Handmade with love</h2>
+                <p>Made in-house in small batches</p>
+            </span>
+        </div>
+        <div class="features-container">
+            <div class="features-icon" id="fire">
+                <i class="fas fa-fire fa-3x"></i>
+            </div>
+            <span class="features-description">
+                <h2>Natural ingredients</h2>
+                <p>
+                    Made with high-quality natural ingredients for healthy glowing skin
+                </p>
+            </span>
+        </div>
+        <div class="features-container">
+            <div class="features-icon" id="shipping">
+                <i class="fas fa-shipping-fast fa-3x"></i>
+            </div>
+            <span class="features-description">
+                <h2>Free shipping</h2>
+                <p>Free shipping and returns on all orders</p>
+            </span>
+        </div>
+    </section>
+
+    <section id="our-story">
+        <iframe src="https://www.youtube.com/embed/gxenNJpUhT0" height="360" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="new">
+        <div class="new-collection">
+            <div id="lavender-collection">
+                <div id="lavender-image-container"></div>
+                <h2>Lavender</h2>
+                <p class="tagline">Unwind with calming lavender oil</p>
+                <p class="price">$5.00 / 6 oz.</p>
+                <button type="button" class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+            <div id="rose-collection">
+                <div id="rose-image-container"></div>
+                <h2>Rose</h2>
+                <p class="tagline">Brighten with skin-softening rose oil</p>
+                <p class="price">$5.00 / 6 oz.</p>
+                <button type="button" class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+        </div>
+        <div id="view-all">
+            <button type="button" id="view-all-btn">VIEW ALL COLLECTIONS</button>
+        </div>
+    </section>
+
+    <section id="footer-img"></section>
+
+    <footer>
+        <div class="social-icons">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+        </div>
+        <div class="copyright">
+            Fizz Shop &#169 2021
+            <span class="copyright-divider" style="color:gray">|</span>
+            All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

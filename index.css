@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --top-spacing: 120px;
+  --font-size-heading: 1.5rem;
+  --font-size-main: 1.2rem;
+  --font-size-button: 1rem;
+}
+
+html {
+  scroll-padding-top: var(--top-spacing);
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1b1b;
+  font-family: 'DIN 2014', arial;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.header-logo > img {
+  width: 20rem;
+}
+
+.header-dropdown-btn {
+  color: rgb(255, 255, 255, 0.9);
+  background-color: black;
+  border: 1px solid gray;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 9px 18px;
+}
+
+.header-dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #1b1b1b;
+  margin-right: 1rem;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-dropdown-content > a {
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  padding: 10px 11px;
+  text-align: center;
+}
+
+.header-dropdown-content a:hover {
+  color: #f2003c;
+  font-weight: 800;
+}
+
+.header-nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav > ul > li {
+  list-style-type: none;
+  padding-left: 4rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #f2003c;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* SUBSCRIBE SECTION */
+#subscribe {
+  height: 500px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://thetoastedpinenut.com/wp-content/uploads/2018/04/IMG_3839-copy.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#form-background {
+  background-color: rgb(255, 255, 255, 0.5);
+  height: 270px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+input {
+  display: block;
+}
+
+#email {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 280px;
+  padding-left: 8px;
+  font-size: 0.9rem;
+}
+
+#submit {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #000000;
+  border: 3px solid #f2003c;
+  border-radius: 2px;
+  margin-top: 0.8rem;
+  color: #ffffff;
+}
+
+#submit:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* FEATURES SECTION */
+#features {
+  background-color: rgb(255, 209, 193, 0.6);
+  height: 590px;
+  padding: 4rem 0;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding: 0 9rem;
+}
+
+.features-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+}
+
+.features-description {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-left: 6rem;
+}
+
+.features-container h2 {
+  font-size: var(--font-size-heading);
+}
+
+.features-container p {
+  font-size: var(--font-size-main);
+  margin-top: 0.2rem;
+}
+
+/* OUR STORY SECTION */
+#our-story {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 360px;
+  background-color: #f6f2f2;
+  padding-right: 11rem;
+  margin: 20px auto;
+  font-size: 1.3rem;
+}
+
+#our-story > iframe {
+  min-height: 360px;
+  max-width: 640px;
+  width: 100%;
+}
+
+/* NEW SECTION */
+#new {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #f2e6e6;
+  padding-top: 5rem;
+  margin-bottom: 20px;
+}
+
+.new-collection {
+  width: 100vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.new-collection h2 {
+  margin-top: 1rem;
+  font-size: var(--font-size-heading);
+}
+
+.new-collection .price {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.new-collection .tagline {
+  margin-top: 0.3rem;
+  font-size: var(--font-size-main);
+}
+
+#lavender-image-container {
+  height: 300px;
+  width: 300px;
+  background-image: url('https://s3.us-west-2.amazonaws.com/koki.life/wp-content/uploads/2020/04/20172339/DSC0002.jpg');
+  background-size: contain;
+}
+
+#lavender-image-container:hover {
+  background-image: url('https://s3.us-west-2.amazonaws.com/koki.life/wp-content/uploads/2020/04/20172342/DSC0004.jpg');
+}
+
+#rose-image-container {
+  height: 300px;
+  width: 300px;
+  background-image: url('https://s3.us-west-2.amazonaws.com/koki.life/wp-content/uploads/2020/04/20172918/DSC0005.jpg');
+  background-size: contain;
+}
+
+#rose-image-container:hover {
+  background-image: url('https://s3.us-west-2.amazonaws.com/koki.life/wp-content/uploads/2020/04/20172919/DSC0008.jpg');
+}
+
+#new button {
+  font-size: var(--font-size-button);
+  border: 2px solid #000;
+  border-radius: 2px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  background-color: #000;
+  color: #ffffff;
+  margin-top: 0.8rem;
+}
+
+.add-to-cart-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#view-all {
+  margin: 5rem 0;
+}
+
+#view-all-btn {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 0.8rem 3rem;
+}
+
+#view-all-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 1.5rem 0;
+}
+
+.social-icons {
+  color: #ffffff;
+  text-align: center;
+}
+
+.social-icons i {
+  padding: 0 1rem;
+}
+
+.social-icons i:hover {
+  color: #f2003c;
+  opacity: 0.9;
+}
+
+.copyright {
+  display: block;
+  color: #808080;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  margin-left: 0.7rem;
+}
+
+.copyright-divider {
+  padding: 0 0.5rem;
+}
+
+#footer-img {
+  height: 200px;
+  background-image: url('https://weedmaps.com/news/wp-content/uploads/2019/05/Vital-You-Bath-Bombs-use-photo-by-Vital-You.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 22%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 771px) {
+  .header-dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-container {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .features-icon {
+    width: 20vw;
+  }
+
+  .features-description {
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  #our-story {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 945px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header-nav > ul > li {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #our-story {
+    padding-bottom: 56.25%;
+    min-height: unset;
+    height: 0;
+  }
+
+  #our-story > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: unset;
+    max-width: unset;
+  }
+
+  .new-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #lavender-collection {
+    margin-bottom: 5rem;
+  }
+
+  #view-all {
+    width: 300px;
+  }
+
+  #view-all-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-logo > img {
+    width: 18rem;
+  }
+}
