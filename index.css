@@ -431,3 +431,9 @@ footer {
     width: 18rem;
   }
 }
+
+@media (max-width: 500px) {
+  .header-logo > img {
+    width: 13rem;
+  }
+}
